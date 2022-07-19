@@ -1,16 +1,19 @@
-# This is a sample Python script.
+# My case
+def make_negative(number):
+    return_value = number
 
-# Press Alt+Mayús+X to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+Mayús+B to toggle the breakpoint.
+    if (return_value > 0):
+        return_value = return_value * -1
+    return return_value
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Best case
+def make_negative_bc(number):
+    return -abs(number)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+# Test
+print(make_negative(4))
+print(make_negative(45))
+print(make_negative(-1))
+print(make_negative(0))
